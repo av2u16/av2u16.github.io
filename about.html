@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Simplify - Simply For You</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+            body, h2, h3, h4, h5, h6 {
+                font-family: "Lato", sans-serif;
+            }
+            
+            h1, button {
+                font-family: "Montserrat", sans-serif;
+            }
+         
+            h1 {
+                font-family: "Montserrat", sans-serif;
+                font-size: 64px;
+                font-weight:normal;
+                color: white;
+                text-align: center;
+            }
+
+            h3 { 
+                font-size: 20px;
+                font-weight:lighter;
+                color: white;
+                text-align:center;
+            }
+
+            header {
+               background-color:  rgb(19, 165, 165);
+               padding:64px 16px;
+            }
+
+            header:hover {
+                background-color:  rgba(19, 165, 165, 0.9);
+            }
+
+            footer {
+               background-color:  rgb(19, 165, 165);
+               padding:28px 16px;
+            }
+
+            .end {
+                background-color:white;
+                padding:64px 16px;
+            }
+
+            button { 
+                background-color:black;
+                border: none;
+                color: white;
+                text-align:center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                padding: 10px 24px;
+            }
+
+            .buttons {
+                text-align: center;
+            }
+
+            nav {
+                font-family: "Montserrat", sans-serif;
+                font-weight:normal;
+                color: white;
+                text-align: left;
+                background-color: rgb(124, 206, 206);
+            }
+            ul {
+                list-style-type: none;
+                position: sticky;
+                top: 0;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: rgba(51, 51, 51, 0.959);
+            }
+             
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .login-register {
+                float:right;
+                background-color:black;
+            }
+
+            .login-register:hover {
+                opacity: 0.8;
+            }
+
+            li a:hover:not(.active) {
+                background-color: rgb(7, 7, 7);
+            }
+
+            .active {
+                background-color: rgb(19, 165, 165);
+            }
+
+            button:hover {
+                opacity: 0.8;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: 200px 20px;
+                grid-gap: 100px;
+                padding: 50px;
+            }
+
+            .grid-container > div {
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                padding: 20px 0px;
+                font-size: 30px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <!--Navigation Bar-->
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="answers-personal.html">Your Answers</a></li>
+                <li><a href="jobs.html">Your Jobs</a></li>
+                <li><a class="active" href="about.html">About Us</a></li>
+                <li class="login-register"><a href="#">Login/Register</a></li>
+              </ul>
+        </nav>
+
+        <!--Header Bar-->
+        <header>
+            <h1>About Simpli.fy</h1>
+        </header>
+        
+        <div class="grid-container">
+            <div>Content Section</div>
+            <div>
+                <i class="glyphicon glyphicon-edit"></i>
+            </div>
+        </div>
+
+        <footer>
+            <h3>Making the first step simple for you</h3>
+        </footer>
+
+        <div class="end">
+            
+        </div>
+    </body>
+</html>
