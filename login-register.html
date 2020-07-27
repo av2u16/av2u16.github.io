@@ -11,6 +11,11 @@
             body, h2, h3, h4, h5, h6 {
                 font-family: "Lato", sans-serif;
             }
+
+            .glyphicon-user {
+                font-size:200px;
+                color: rgb(19, 165, 165);
+            }
             
             h1, button {
                 font-family: "Montserrat", sans-serif;
@@ -120,8 +125,8 @@
             .grid-container {
                 display: grid;
                 grid-template-columns: auto auto;
-                grid-template-rows: 200px 20px;
-                grid-gap: 100px;
+                grid-template-rows: 600px 20px;
+                grid-gap: 0px;
                 padding: 0px;
             }
 
@@ -130,6 +135,14 @@
                 text-align: center;
                 padding: 20px 0px;
                 font-size: 30px;
+            }
+
+            textarea {
+                resize: none;
+                align-items: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
             }
 
         </style>
@@ -147,24 +160,37 @@
               </ul>
         </nav>
 
+        <br>
         <div class="grid-container">
             <div>
-                <i class="glyphicon glyphicon-edit"></i>
+                <i class="glyphicon glyphicon-user"></i>
                 <h2>Login</h2>
+                <h4 style="text-align: center;">Email Address</h4>
+                <textarea name="answer" id="answer" cols="15" rows="1"></textarea>
+                <h4 style="text-align: center;">Password</h4>
+                <textarea name="answer" id="answer" cols="15" rows="1"></textarea>
+                <button>Login</button>
             </div>
             <div style="background-color:rgb(19, 165, 165);">
-                <i class="glyphicon glyphicon-edit"></i>
-                <h2 style="color:white">Register</h2>
-                
+                <div>
+                    <h2>Register</h2>
+                    <p style="text-align: center;">First Name</p>
+                    <textarea name="answer" id="answer" cols="15" rows="1"></textarea>
+                    <h4 style="text-align: center;">Last Name</h4>
+                    <textarea name="answer" id="answer" cols="15" rows="1"></textarea>
+                    <h4 style="text-align: center;">Email Address</h4>
+                    <textarea name="answer" id="answer" cols="15" rows="1"></textarea>
+                    <h4 style="text-align: center;">Create Password</h4>
+                    <textarea name="answer" id="answer" cols="15" rows="1"></textarea>
+                    <h4 style="text-align: center;">Confirm Password</h4>
+                    <textarea name="answer" id="answer" cols="15" rows="1"></textarea>
+                    <button>Register</button>
+                </div>                
             </div>
         </div>
-
+        
         <footer>
             <h3>Making the first step simple for you</h3>
         </footer>
-
-        <div class="end">
-            
-        </div>
     </body>
 </html>
