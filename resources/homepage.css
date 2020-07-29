@@ -42,8 +42,10 @@ p {
 }
 
 header {
-   background-color:  rgb(19, 165, 165);
-   padding:64px 16px;
+    font-family: "Lato", sans-serif;
+    color: white;
+    background-color:  rgb(19, 165, 165);
+    padding:64px 16px;
 }
 
 header:hover {
@@ -52,8 +54,8 @@ header:hover {
 }
 
 footer {
-   background-color:  rgb(19, 165, 165);
-   padding:28px 16px;
+    background-color:  rgb(19, 165, 165);
+    padding:28px 16px;
 }
 
 .end {
