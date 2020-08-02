@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Your Answers (Qualities) - Apply Myself</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="resources/answers-qualities.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+            body, h2, h3, h4, h5, h6 {
+                font-family: "Lato", sans-serif;
+            }
+    
+            .glyphicon-chevron-right {
+                font-weight:lighter;
+            }
+            .glyphicon-check {
+                font-size:180px;
+                color: rgb(19, 165, 165);
+            }
+    
+    
+            h1, button {
+                font-family: "Montserrat", sans-serif;
+            }
+    
+            h1 {
+                font-family: "Lato", sans-serif;
+                font-size: 64px;
+                font-weight:normal;
+                color: white;
+                text-align: center;
+            }
+    
+            h3 { 
+                font-family: "Montserrat", sans-serif;
+                font-size: 20px;
+                font-weight:lighter;
+                color: white;
+                text-align:center;
+            }
+    
+            h2 {
+                text-align: left;
+            }
+    
+            h4 {
+                text-align: center;
+            }
+    
+            p {
+                text-align: justify;
+                font-size:20px;
+            }
+    
+            header {
+            background-color:  rgb(19, 165, 165);
+            padding:64px 16px;
+            }
+    
+            header:hover {
+                background-color:  rgba(19, 165, 165, 0.9);
+            }
+    
+            footer {
+            background-color:  rgb(19, 165, 165);
+            padding:28px 16px;
+            }
+    
+            .end {
+                background-color:white;
+                padding:64px 16px;
+            }
+    
+            button { 
+                background-color:black;
+                border: none;
+                color: white;
+                text-align:center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                padding: 10px 24px;
+            }
+    
+            .buttons {
+                text-align: center;
+            }
+    
+            nav {
+                font-family: "Montserrat", sans-serif;
+                font-weight:normal;
+                color: white;
+                text-align: left;
+                background-color: rgb(124, 206, 206);
+            }
+            ul {
+                list-style-type: none;
+                position: sticky;
+                top: 0;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: rgba(51, 51, 51, 0.959);
+            }
+            
+            li {
+                float: left;
+            }
+    
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+    
+            .login-register {
+                float:right;
+                background-color:black;
+            }
+    
+            .login-register:hover {
+                opacity: 0.7;
+            }
+    
+            li a:hover:not(.active) {
+                background-color: rgb(7, 7, 7);
+            }
+    
+            .active {
+                background-color: rgb(19, 165, 165);
+            }
+    
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: 200px 20px;
+                grid-gap: 100px;
+                padding: 50px;
+            }
+    
+            .grid-container > div {
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                padding: 20px 0px;
+                font-size: 30px;
+            }
+    
+            .section-bar { 
+                font-family: "Montserrat", sans-serif;
+                background-color: rgb(190, 190, 190);
+                text-align: center;
+                font-size: large;
+                display: grid;
+                grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+                grid-template-rows: 10px 10px;
+                grid-gap: 1px;
+                padding: 10px;
+            }
+    
+            .main-container {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: 200px 20px;
+                grid-gap: 100px;
+                padding: 50px;
+            }
+    
+            textarea {
+                resize: none;
+                align-items: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+    
+            .prev-next { 
+                text-align: center;
+            }
+    
+            .prev-next:hover {
+                opacity: 0.7;
+            }
+        </style>
+    </head>
+    
+
+
+    <body>
+        <!--Navigation Bar-->
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a class="active" href="answers-personal.html">Your Answers</a></li>
+                <li><a href="jobs.html">Your Jobs</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="login-register"><a href="login-register.html">Login/Register</a></li>
+              </ul>
+        </nav>
+
+        <!--Header Bar-->
+        <header>
+            <h1>Your Answers</h1>
+            <h3>Build your professional profile by creating your best answer to questions related to your education, work experience, your skillset and qualities</h3>
+            <h3>Once completed, you can go on job application websites and add your answers with one-click</h3>
+        </header>
+        
+        <br>
+
+        <div class="section-bar">
+            <a href="answers-personal.html" style="color:black">Personal</a>
+            <i class="glyphicon glyphicon-chevron-right" style="color:rgba(35, 35, 35, 0.75)"></i>
+            <a href="answers-education.html" style="color:black">Education</a>
+            <i class="glyphicon glyphicon-chevron-right" style="color:rgba(35, 35, 35, 0.75)"></i>
+            <a href="answers-experience.html" style="color:black">Experience</a>
+            <i class="glyphicon glyphicon-chevron-right" style="color:rgba(35, 35, 35, 0.75)"></i>
+            <a href="answers-hobbies.html" style="color:black">Hobbies</a>
+            <i class="glyphicon glyphicon-chevron-right" style="color:rgba(35, 35, 35, 0.75)"></i>
+            <a href="answers-qualities.html" style="color:black">Qualities</a>
+            <i class="glyphicon glyphicon-chevron-right" style="color:rgba(35, 35, 35, 0.75)"></i>
+            <a href="answers-ayo.html" style="color:black">Add Your Own</a>
+        </div>
+        
+        <div class="main-container">
+            
+            <div>
+                <h2>SYNONYM BANK</h2>
+            </div>
+            <div class="area">
+                <h2 style="text-align: center;">QUALITIES</h2>
+                <h4 style="text-align: center;">Give an example of when you have worked under pressure.</h4>
+                <textarea name="answer" id="answer" cols="75" rows="10"></textarea>
+                <br>
+                <h4 style="text-align: center;">What is your greatest achievement?</h4>
+                <textarea name="answer" id="answer" cols="75" rows="10"></textarea>
+                <br>
+                <h4 style="text-align: center;">Give an example of how you made a positive contribution to a team and what the outcome was.</h4>
+                <textarea name="answer" id="answer" cols="75" rows="10"></textarea>
+                <br>
+                <h4 style="text-align: center;">Describe an occasion when you've had to communicate complex information.</h4>
+                <textarea name="answer" id="answer" cols="75" rows="10"></textarea>
+                <br>
+                <h4 style="text-align: center;">What is the biggest challenge that you've faced and how did you handle it?</h4>
+                <textarea name="answer" id="answer" cols="75" rows="10"></textarea>
+                <br>
+                <h4 style="text-align: center;">What are your greatest strengths and weaknesses?</h4>
+                <textarea name="answer" id="answer" cols="75" rows="10"></textarea>
+                <br>
+                <h4 style="text-align: center;">Discuss a time when you failed to complete a project by the deadline.</h4>
+                <textarea name="answer" id="answer" cols="75" rows="10"></textarea>
+                <br>
+                <div class="prev-next">
+                    <button><a href="answers-hobbies.html">Previous</a></button>
+                    <button><a href="answers-ayo.html">Next</a></button>
+                </div>
+            </div>
+            <div>
+                <h2>PHRASE BANK</h2>
+            </div>
+            
+        </div>
+
+
+        <div class="grid-container">
+            <div>
+                <h2>Help Guide</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+            <div>
+                <i class="glyphicon glyphicon-check"></i>
+            </div>
+        </div>
+
+        
+
+        <footer>
+            <h3>Making the first step simple for you</h3>
+        </footer>
+
+        <div class="end">
+            
+        </div>
+    </body>
+</html>
