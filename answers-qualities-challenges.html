@@ -20,8 +20,13 @@
                 font-size:180px;
                 color: rgb(19, 165, 165);
             }
-    
-    
+
+            .glyphicon-triangle-left, .glyphicon-triangle-right {
+                font-size:45px;
+                text-align: center;
+                color: rgb(19, 165, 165);
+            }
+                
             h1, button {
                 font-family: "Montserrat", sans-serif;
             }
@@ -171,6 +176,19 @@
                 grid-gap: 100px;
                 padding: 50px;
             }
+
+            .arrows-container {
+                text-align: center;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: 0px 0px;
+                grid-gap: 75px;
+                padding: 10px;
+            }
+
+            a.arrows-container {
+                text-align: center;
+            }
     
             textarea {
                 resize: none;
@@ -222,7 +240,7 @@
             <i class="glyphicon glyphicon-chevron-right" style="color:rgba(35, 35, 35, 0.75)"></i>
             <a href="answers-hobbies.html" style="color:black">Hobbies</a>
             <i class="glyphicon glyphicon-chevron-right" style="color:rgba(35, 35, 35, 0.75)"></i>
-            <a href="answers-qualities.html" style="color:black">Qualities</a>
+            <a href="answers-qualities-pressure.html" style="color:black">Qualities</a>
             <i class="glyphicon glyphicon-chevron-right" style="color:rgba(35, 35, 35, 0.75)"></i>
             <a href="answers-ayo.html" style="color:black">Add Your Own</a>
         </div>
@@ -233,28 +251,25 @@
                 <h2>SYNONYM BANK</h2>
             </div>
             <div class="area">
-                <h2 style="text-align: center;">QUALITIES</h2>
-                <h4 style="text-align: center;">Give an example of when you have worked under pressure.</h4>
-                <textarea name="answer" id="answer" cols="75" rows="10"></textarea>
-                <br>
-                <h4 style="text-align: center;">What is your greatest achievement?</h4>
-                <textarea name="answer" id="answer" cols="75" rows="10"></textarea>
-                <br>
-                <h4 style="text-align: center;">Give an example of how you made a positive contribution to a team and what the outcome was.</h4>
-                <textarea name="answer" id="answer" cols="75" rows="10"></textarea>
-                <br>
-                <h4 style="text-align: center;">Describe an occasion when you've had to communicate complex information.</h4>
-                <textarea name="answer" id="answer" cols="75" rows="10"></textarea>
-                <br>
+                
+                <div class="arrows-container">
+                    <a href="answers-qualities-communication.html">
+                        <i class="glyphicon glyphicon-triangle-left" style="color:rgba(35, 35, 35, 0.75)"></i>
+                        <br/>
+                    </a>
+                    
+                    <h2 style="text-align: center;">QUALITIES</h2>
+
+                    <a href="answers-qualities-sandw.html">
+                        <i class="glyphicon glyphicon-triangle-right" style="color:rgba(35, 35, 35, 0.75)"></i>
+                        <br/>
+                    </a>
+                </div>
+
                 <h4 style="text-align: center;">What is the biggest challenge that you've faced and how did you handle it?</h4>
                 <textarea name="answer" id="answer" cols="75" rows="10"></textarea>
                 <br>
-                <h4 style="text-align: center;">What are your greatest strengths and weaknesses?</h4>
-                <textarea name="answer" id="answer" cols="75" rows="10"></textarea>
-                <br>
-                <h4 style="text-align: center;">Discuss a time when you failed to complete a project by the deadline.</h4>
-                <textarea name="answer" id="answer" cols="75" rows="10"></textarea>
-                <br>
+                
                 <div class="prev-next">
                     <button><a href="answers-hobbies.html">Previous</a></button>
                     <button><a href="answers-ayo.html">Next</a></button>
@@ -276,8 +291,6 @@
                 <i class="glyphicon glyphicon-check"></i>
             </div>
         </div>
-
-        
 
         <footer>
             <h3>Making the first step simple for you</h3>

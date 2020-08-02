@@ -20,8 +20,13 @@
                 font-size:180px;
                 color: rgb(19, 165, 165);
             }
-    
-    
+
+            .glyphicon-triangle-left, .glyphicon-triangle-right {
+                font-size:45px;
+                text-align: center;
+                color: rgb(19, 165, 165);
+            }
+                
             h1, button {
                 font-family: "Montserrat", sans-serif;
             }
@@ -171,6 +176,19 @@
                 grid-gap: 100px;
                 padding: 50px;
             }
+
+            .arrows-container {
+                text-align: center;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: 0px 0px;
+                grid-gap: 75px;
+                padding: 10px;
+            }
+
+            a.arrows-container {
+                text-align: center;
+            }
     
             textarea {
                 resize: none;
@@ -189,9 +207,6 @@
             }
         </style>
     </head>
-
-    
-
 
     <body>
         <!--Navigation Bar-->
@@ -222,7 +237,7 @@
             <i class="glyphicon glyphicon-chevron-right" style="color:rgba(35, 35, 35, 0.75)"></i>
             <a href="answers-hobbies.html" style="color:black">Hobbies</a>
             <i class="glyphicon glyphicon-chevron-right" style="color:rgba(35, 35, 35, 0.75)"></i>
-            <a href="answers-qualities.html" style="color:black">Qualities</a>
+            <a href="answers-qualities-pressure.html" style="color:black">Qualities</a>
             <i class="glyphicon glyphicon-chevron-right" style="color:rgba(35, 35, 35, 0.75)"></i>
             <a href="answers-ayo.html" style="color:black">Add Your Own</a>
         </div>
@@ -233,7 +248,16 @@
                 <h2>SYNONYM BANK</h2>
             </div>
             <div class="area">
-                <h2 style="text-align: center;">PERSONAL</h2>
+
+                <div class="arrows-container">
+                    <i class="glyphicon glyphicon-triangle-left" style="color:white"></i>
+                    <h2 style="text-align: center;">PERSONAL</h2>
+                    <a href="answers-education.html">
+                        <i class="glyphicon glyphicon-triangle-right" style="color:rgba(35, 35, 35, 0.75)"></i>
+                        <br/>
+                    </a>
+                </div>
+
                 <h4 style="text-align: center;">First Name</h4>
                 <textarea name="answer" id="answer" cols="75" rows="1"></textarea>
                 <br>
@@ -268,7 +292,7 @@
                 <textarea name="answer" id="answer" cols="75" rows="1"></textarea>
                 <br>
                 <div class="prev-next">
-                    <button><a href="answers-education.html">Next</a></button>
+                    <button><a href="answers-education.html">Next Section</a></button>
                 </div>
             </div>
             <div>
