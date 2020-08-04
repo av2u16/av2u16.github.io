@@ -91,6 +91,19 @@
                 cursor: pointer;
                 padding: 10px 24px;
             }
+
+            .save {
+                background-color:rgb(19, 165, 165);
+                border: none;
+                
+                text-align:center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                padding: 10px 24px; 
+            }
     
             .buttons {
                 text-align: center;
@@ -172,7 +185,7 @@
             .main-container {
                 display: grid;
                 grid-template-columns: auto auto auto;
-                grid-template-rows: 900px 20px;
+                grid-template-rows: 950px 20px;
                 grid-gap: 100px;
                 padding: 50px;
             }
@@ -247,8 +260,9 @@
             <div>
                 <h2>SYNONYM BANK</h2>
             </div>
-            <div class="area">
 
+            
+            <div class="area" style="text-align: center;">             
                 <div class="arrows-container">
                     <i class="glyphicon glyphicon-triangle-left" style="color:white"></i>
                     <h2 style="text-align: center;">PERSONAL</h2>
@@ -257,40 +271,43 @@
                         <br/>
                     </a>
                 </div>
+       
 
                 <h4 style="text-align: center;">First Name</h4>
-                <textarea name="answer" id="answer" cols="75" rows="1"></textarea>
+                <textarea name="fname" id="fname" cols="75" rows="1"></textarea>
                 <br>
                 <h4 style="text-align: center;">Last Name</h4>
-                <textarea name="answer" id="answer" cols="75" rows="1"></textarea>
+                <textarea name="lname" id="lname" cols="75" rows="1"></textarea>
                 <br>
                 <h4 style="text-align: center;">Email Address</h4>
-                <textarea name="answer" id="answer" cols="75" rows="1"></textarea>
+                <textarea name="email" id="email" cols="75" rows="1"></textarea>
                 <br>
                 <h4 style="text-align: center;">Phone Number</h4>
-                <textarea name="answer" id="answer" cols="75" rows="1"></textarea>
+                <textarea name="phone" id="phone" cols="75" rows="1"></textarea>
                 <br>
                 <h4 style="text-align: center;">Country</h4>
-                <textarea name="answer" id="answer" cols="75" rows="1"></textarea>
+                <textarea name="country" id="country" cols="75" rows="1"></textarea>
                 <br>
                 <h4 style="text-align: center;">County</h4>
-                <textarea name="answer" id="answer" cols="75" rows="1"></textarea>
+                <textarea name="county" id="county" cols="75" rows="1"></textarea>
                 <br>
                 <h4 style="text-align: center;">City/Town</h4>
-                <textarea name="answer" id="answer" cols="75" rows="1"></textarea>
+                <textarea name="city" id="city" cols="75" rows="1"></textarea>
                 <br>
                 <h4 style="text-align: center;">Postcode</h4>
-                <textarea name="answer" id="answer" cols="75" rows="1"></textarea>
+                <textarea name="postc" id="postc" cols="75" rows="1"></textarea>
                 <br>
                 <h4 style="text-align: center;">Address Line 1</h4>
-                <textarea name="answer" id="answer" cols="75" rows="1"></textarea>
+                <textarea name="add1" id="add1" cols="75" rows="1"></textarea>
                 <br>
                 <h4 style="text-align: center;">Address Line 2</h4>
-                <textarea name="answer" id="answer" cols="75" rows="1"></textarea>
+                <textarea name="add2" id="add2" cols="75" rows="1"></textarea>
                 <br>
                 <h4 style="text-align: center;">Address Line 3</h4>
-                <textarea name="answer" id="answer" cols="75" rows="1"></textarea>
+                <textarea name="add3" id="add3" cols="75" rows="1"></textarea>
                 <br>
+
+                <button class="save" type="save">SAVE</button>
                 <div class="prev-next">
                     <button><a href="answers-education.html">Next Section</a></button>
                 </div>
