@@ -91,6 +91,18 @@
                 cursor: pointer;
                 padding: 10px 24px;
             }
+
+            .save {
+                background-color:rgb(19, 165, 165);
+                border: none;
+                text-align:center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                padding: 10px 24px; 
+            }
     
             .buttons {
                 text-align: center;
@@ -172,7 +184,7 @@
             .main-container {
                 display: grid;
                 grid-template-columns: auto auto auto;
-                grid-template-rows: 200px 20px;
+                grid-template-rows: 250px 20px;
                 grid-gap: 100px;
                 padding: 50px;
             }
@@ -187,6 +199,10 @@
             }
 
             a.arrows-container {
+                text-align: center;
+            }
+
+            .area {
                 text-align: center;
             }
     
@@ -269,6 +285,8 @@
                 <h4 style="text-align: center;">What is your greatest achievement?</h4>
                 <textarea name="achievement" id="achievement" cols="75" rows="10"></textarea>
                 <br>
+
+                <button class="save" type="save">SAVE</button>
                 
                 <div class="prev-next">
                     <button><a href="answers-hobbies.html">Previous</a></button>
@@ -281,7 +299,6 @@
             
         </div>
 
-
         <div class="grid-container">
             <div>
                 <h2>Help Guide</h2>
@@ -291,8 +308,6 @@
                 <i class="glyphicon glyphicon-check"></i>
             </div>
         </div>
-
-        
 
         <footer>
             <h3>Making the first step simple for you</h3>
