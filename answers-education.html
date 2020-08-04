@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Your Answers (Personal) - Apply Myself</title>
+        <title>Your Answers (Education) - Apply Myself</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="resources/answers-education.css">
@@ -185,7 +185,7 @@
             .main-container {
                 display: grid;
                 grid-template-columns: auto auto auto;
-                grid-template-rows: 250px 20px;
+                grid-template-rows: 300px 20px;
                 grid-gap: 100px;
                 padding: 50px;
             }
@@ -289,8 +289,18 @@
                     </a>
                 </div> 
 
-                <h4 style="text-align: center;">Explain your leadership experience.</h4>
-                <textarea name="answer" id="answer" cols="75" rows="10"></textarea>
+                <h4 style="text-align: center;">School Name</h4>
+                <textarea name="sname" id="sname" cols="75" rows="1"></textarea>
+                <br>
+                <h4 style="text-align: center;">Location</h4>
+                <textarea name="location" id="location" cols="75" rows="1"></textarea>
+                <br>
+                <h4 style="text-align: center;">Start Date</h4>
+                <input type="date" id="start-date" name="start-date">
+                <br>
+                <h4 style="text-align: center;">End Date</h4>
+                <input type="date" id="end-date" name="end-date">
+                <br>
 
                 <button class="save" type="save">SAVE</button>
 
