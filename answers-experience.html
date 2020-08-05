@@ -231,6 +231,30 @@
                 font-size: 60px;
                 text-align: center;
             }
+
+            .synonym-vertical-menu {
+                width: 250px;
+                height: 300px;
+                overflow-y: auto;  
+                background-color: #eee;
+            }
+
+            .synonym-vertical-menu a {
+                background-color: #eee;
+                color: black;
+                display: block;
+                padding: 12px;
+                text-decoration: none;
+            }
+
+            .synonym-vertical-menu a:hover {
+                background-color: #ccc;
+            }
+
+            .synonym-vertical-menu a.active {
+                background-color: rgb(19, 165, 165);
+                color: white;
+            }
             
             .vertical-menu {
                 width: 250px;
@@ -296,7 +320,11 @@
             
             <div>
                 <h2>SYNONYM BANK</h2>
+                <div class="synonym-vertical-menu">
+                    <textarea name="synonym" id="synonym" cols="30" rows="1"></textarea>
+                </div>
             </div>
+            
             <div class="area">
 
                 <div class="arrows-container">
