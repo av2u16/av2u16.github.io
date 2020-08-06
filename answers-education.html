@@ -185,7 +185,7 @@
             .main-container {
                 display: grid;
                 grid-template-columns: auto auto auto;
-                grid-template-rows: 300px 20px;
+                grid-template-rows: 900px 20px;
                 grid-gap: 100px;
                 padding: 50px;
             }
@@ -201,6 +201,22 @@
 
             a.arrows-container {
                 text-align: center;
+            }
+
+            .dates-container {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: 0px 0px;
+                grid-gap: 100px;
+                padding: 0px;
+            }
+
+            .grades-container {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: 0px 0px;
+                grid-gap: 100px;
+                padding: 0px;
             }
             
             .area {
@@ -286,26 +302,48 @@
                         <i class="glyphicon glyphicon-triangle-right" style="color:rgba(35, 35, 35, 0.75)"></i>
                         <br/>
                     </a>
-                </div> 
 
-                <h4 style="text-align: center;">School Name</h4>
+                </div>
+                <h4 style="text-align: center;">University Name</h4>
                 <textarea name="sname" id="sname" cols="75" rows="1"></textarea>
                 <br>
                 <h4 style="text-align: center;">Location</h4>
                 <textarea name="location" id="location" cols="75" rows="1"></textarea>
                 <br>
-                <h4 style="text-align: center;">Start Date</h4>
-                <input type="date" id="start-date" name="start-date">
-                <br>
-                <h4 style="text-align: center;">End Date</h4>
-                <input type="date" id="end-date" name="end-date">
-                <br>
+                <div class="grades-container">
+                    <div>
+                        <h4 style="text-align: center;">Grade</h4>
+                        <textarea name="grade" id="grade" cols="15" rows="1"></textarea>
+                    </div>
+                    <div>
+                        <br>
+                        <input type="radio" id="achieved" name="grades" value="achieved">
+                        <label for="achieved">Achieved</label><br>
+                    </div>
+                    <div>
+                        <br>
+                        <input type="radio" id="waiting" name="grades" value="waiting">
+                        <label for="waiting">Waiting</label><br>
+                    </div>
+                </div>
+                <div class="dates-container">
+                    <div>
+                        <h4 style="text-align: center;">Start Date</h4>
+                        <input type="date" id="start-date" name="start-date">
+                        <br>
+                    </div>
+                    <div>
+                        <h4 style="text-align: center;">End Date</h4>
+                        <input type="date" id="end-date" name="end-date">
+                        <br>
+                    </div>
+                </div>
 
                 <button class="save" type="save">SAVE</button>
 
                 <div class="prev-next">
                     <button><a href="answers-personal.html">Previous Section</a></button>
-                    <button><a href="answers-experience.html">Next Section</a></button>
+                    <button><a href="answers-education-school.html">Next Section</a></button>
                 </div>
             </div>
             <div>
