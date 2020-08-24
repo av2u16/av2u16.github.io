@@ -1,238 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <title>Apply Myself</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
-            body, h2, h3, h4, h5, h6 {
-                font-family: "Lato", sans-serif;
-            }
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
 
-            body {
-                padding:0;
-                margin:0;
-            }
+    <title>Apply Myself</title>
 
-            .glyphicon-edit, .glyphicon-saved, .glyphicon-download {
-                font-size:200px;
-                color: rgb(19, 165, 165);
-            }
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 
-            h1, button {
-                font-family: "Montserrat", sans-serif;
-            }
+    <!-- Custom styles for this template -->
+    <link href="resources/homepage.css" rel="stylesheet">
+  </head>
+  <body>
 
-            h1 {
-                font-family: "Lato", sans-serif;
-                font-size: 64px;
-                font-weight:normal;
-                color: white;
-                text-align: center;
-            }
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #10b6b6;">
+        <a class="navbar-brand" href="homepage.html">APPLY MYSELF</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="answers.html">Your Answers <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jobs.html">Your Jobs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-            h2 {
-                text-align:justify;
-            }
+    <main role="main">
 
-            h3 { 
-                font-family: "Montserrat", sans-serif;
-                font-size: 20px;
-                font-weight:lighter;
-                color: white;
-                text-align:center;
-            }
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="images/cytonn-photography-ZJEKICY5EXY-unsplash.jpg" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>Revolutionising The Way Students Apply Themselves</h1>
+                <p>We're here to help you showcase your best skills to top employers by creating ideal responses to application questions.</p>
+                <p><a class="btn btn-lg btn-primary" style="border: black; background-color: #000000cb;" href="signup.html" role="button">Sign Up Now</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="second-slide" src="images/domenico-gentile-IO4wIzn4wEo-unsplash.jpg" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Have Access to 100+ Job Application Questions</h1>
+                <p>From the top 100 graduate employers, we have gathered commonly asked questions from their applications. You can prepare your best answers and apply them to multiple companies.</p>
+                <p><a class="btn btn-lg btn-primary" style="border: black; background-color: #000000cb;" href="#" role="button">View Details</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide" src="images/markus-spiske-SRNKol31s64-unsplash.jpg" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>Keep Track of Every Job Application</h1>
+                <p>Never forget deadlines of completing applications for companies you want to apply for. Alongside important dates, you can add job titles and other requirements regarding each application.</p>
+                <p><a class="btn btn-lg btn-primary" style="border: black; background-color: #000000cb;" href="#" role="button">Download Extension</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 
-            p {
-                text-align:justify;
-                font-size:20px;
-            }
 
-            header {
-                font-family: "Lato", sans-serif;
-                color: white;
-                background-color:  rgb(19, 165, 165);
-                padding:64px 16px;
-            }
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
 
-            header:hover {
-                background-color:  rgba(19, 165, 165, 0.9);
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <br>
             
-            }
-
-            footer {
-                background-color:  rgb(19, 165, 165);
-                padding:28px 16px;
-            }
-
-            .end {
-                background-color:white;
-                padding:64px 16px;
-            }
-
-            button { 
-                background-color:black;
-                border: none;
-                color: white;
-                text-align:center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-                padding: 10px 24px;
-            }
-
-            .buttons {
-                text-align: center;
-            }
-
-            nav {
-                font-family: "Montserrat", sans-serif;
-                font-weight:normal;
-                color: white;
-                text-align: left;
-                background-color: rgb(124, 206, 206);
-            }
-            ul {
-                list-style-type: none;
-                position: sticky;
-                top: 0;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: rgba(51, 51, 51, 0.959);
-            }
+            <h2>Your Answers</h2>
+            <p>
+              Apply Myself will give you access to every possible application question for internships, graduate schemes and jobs.
+              Using our help guide, synonym bank and phrase bank, you can prepare a perfect answer for each question.
+            </p>
+            <p><a class="btn btn-secondary" style="border: #075858; background-color: #10b6b6;" href="#featurette1" role="button">View Details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <br>
             
-            li {
-                float: left;
-            }
+            <h2>Job Tracker</h2>
+            <p>
+              Apply Myself will create a table for you to see which companies you have applied for, job title, deadline dates and more important details regarding the role.
+              You can download the table to your desktop in Excel or PDF format, to keep track of applications offline.
+            </p>
+            <p><a class="btn btn-secondary" style="border: #075858; background-color: #10b6b6;" href="#featurette2" role="button">View Details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <br>
+            
+            <h2>Our Extension</h2>
+        
+            <p>
+              With a click of a button, you can autofill commonly asked questions into application websites.
+              And when applying for every job, you can add each application into a table to track all your deadlines and next steps.
+            </p>
+            <a class="btn btn-secondary" style="border: #075858; background-color: #10b6b6;" href="#featurette3" role="button">View Details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
 
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
 
-            .login-register {
-                float:right;
-                background-color:black;
-            }
+        <!-- START THE FEATURETTES -->
 
-            .login-register:hover {
-                opacity: 0.8;
-            }
+        <hr class="featurette-divider" id="featurette1">
 
-            li a:hover:not(.active) {
-                background-color: rgb(7, 7, 7);
-            }
-
-            .active {
-                background-color: rgb(19, 165, 165);
-            }
-
-            button:hover {
-                opacity: 0.8;
-            }
-
-            .grid-container {
-                display: grid;
-                grid-template-columns: auto auto;
-                grid-template-rows: 250px 0px;
-                grid-gap: 50px;
-                padding: 50px;
-            }
-
-            .grid-container > div {
-                background-color: rgba(255, 255, 255, 0.8);
-                text-align: center;
-                padding: 20px 0px;
-                font-size: 30px;
-            }
-
-            end {
-                text-align: center;
-            }
-
-            .fa-facebook-official, .fa-instagram, .fa-linkedin {
-                font-size: 60px;
-                text-align: center;
-            }
-        </style>
-    </head>
-
-    <body>
-        <!--Navigation Bar-->
-        <nav>
-            <ul>
-                <li><a class="active" href="homepage.html">Home</a></li>
-                <li><a href="answers-personal.html">Your Answers</a></li>
-                <li><a href="jobs.html">Your Jobs</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li class="login-register"><a href="login-register.html">Login/Register</a></li>
-              </ul>
-        </nav>
-
-        <!--Header Bar-->
-        <header>
-            <h1>APPLY MYSELF</h1>
-            <h3>Making the first step simple for you</h3>
-            <div class="buttons">
-                <button>Login</button>
-                <button>Register</button>
-            </div>
-        </header>
-
-        <div class="grid-container">
-            <div>
-                <h2>Your Answers</h2>
-                <p>Apply Myself will give you access to every possible application question for internships, graduate schemes and jobs.</p>
-                <p>Using our help guide, synonym bank and phrase bank, you can prepare a perfect answer for each question.</p>
-                <p>Once you start applying for jobs, you can automatically apply each answer using our extension, saving you plenty of time to apply for as many jobs as possible.</p>
-            </div>
-            <div>
-                <i class="glyphicon glyphicon-edit"></i>
-            </div>
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">How 'Your Answers' Work</h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
         </div>
 
-        <div class="grid-container">
-            <div>
-                <i class="glyphicon glyphicon-saved"></i>
-            </div>
-            <div>
-                <h2>Your Job Applications</h2>
-                <p>As you get in the zone for apply for jobs, you can keep track of every application process you have started using our extension.</p>
-                <p>Apply Myself will create a table for you to see which companies you have applied for, job title, deadline dates and more important details regarding the role.</p>
-                <p>You can download the table to your desktop in Excel or PDF format, to keep track of applications offline.</p>
-            </div>
+        <hr class="featurette-divider" id="featurette2">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">How 'Job Tracker' Work</h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
         </div>
 
-        <div class="grid-container">
-            <div>
-                <h2>Download Our Extension</h2>
-                <p>With a click of a button, you can autofill commonly asked questions into application websites.</p>
-                <p>And when applying for every job, you can add each application into a table to track all your deadlines and next steps.</p>
-            </div>
-            <div>
-                <i class="glyphicon glyphicon-download"></i>
-            </div>
+        <hr class="featurette-divider" id="featurette3">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">How Our 'Extension' Works</h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
         </div>
 
-        <footer>
-            <h3>Redefining the way students apply themselves</h3>
-        </footer>
+        <hr class="featurette-divider">
 
-        <div class="end" style="text-align: center;">
-            <h4>Follow Us</h4>
-            <i class="fa fa-facebook-official"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-linkedin"></i>
-        </div>
-    </body>
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/vendor/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
 </html>
