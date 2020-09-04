@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Login - Apply Myself</title>
+
+        <!-- Bootstrap: core CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <style>
+            /*Style: Entire Website Body*/
+            html,body {
+            height: 100%;
+            }
+
+            body {
+            display: -ms-flexbox;
+            display: -webkit-box;
+            display: flex;
+            -ms-flex-align: center;
+            -ms-flex-pack: center;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #f5f5f5;
+            }
+
+            /* Style: Form Section*/
+            .form-signin {
+            width: 100%;
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+            }
+            .form-signin .checkbox {
+            font-weight: 400;
+            }
+            .form-signin .form-control {
+            position: relative;
+            box-sizing: border-box;
+            height: auto;
+            padding: 10px;
+            font-size: 16px;
+            }
+            .form-signin .form-control:focus {
+            z-index: 2;
+            }
+            .form-signin input[type="email"] {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            }
+            .form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            }
+        </style>
+    </head>
+
+    <body class="text-center">
+
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #1310d6;">
+                <a class="navbar-brand" href="homepage.html">APPLY MYSELF</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="answers.html">Your Answers <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="jobs.html">Your Jobs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    
+        <form class="form-signin">
+            <h1>APPLY MYSELF</h1>
+            <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+            <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+            
+            <label for="inputEmail" class="sr-only">email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Username" required autofocus>
+            
+            <label for="inputPassword" class="sr-only">password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+
+            <p>Not a User? <a href="signup.html"><strong>Register Here</strong></a></p>
+            <button class="btn btn-lg btn-primary btn-block" type="button" onclick="callAPI(document.getElementById('inputEmail').value, document.getElementById('inputPassword').value)">Sign in</button>
+        </form>
+
+        <script>
+            // define the callAPI function that takes users' emails and passwords as parameters
+            var callAPI = (email, password) => {
+
+                // instantiate a headers object
+                var myHeaders = new Headers();
+
+                // add content type header to object
+                myHeaders.append("Content-Type", application/json);
+
+                // using built in JSON utility package turn object to string and store in a variable
+                var raw = JSON.stringify({"email":email,"password":password});
+
+                // create a JSON object with parameters for API call and store in a variable
+                var requestOptions = {
+                    method: 'POST',
+                    headers: myHeaders,
+                    body: raw,
+                    redirect: 'follow'
+                };
+                
+                // make API call with parameters and use promises to get response
+                fetch("URL LINK", requestOptions)
+                .then(response => response.text())
+                .then(result => alert(JSON.parse(result).body))
+                .catch(error => console.log('error', error));
+            }
+        </script>
+
+        <!-- Bootstrap: core JavaScript-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/vendor/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
