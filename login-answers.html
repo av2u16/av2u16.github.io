@@ -11,6 +11,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 
     <!-- Custom styles for this template -->
@@ -19,8 +20,8 @@
   <body>
 
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #10b6b6;">
-        <a class="navbar-brand" href="login-homepage.html">APPLY MYSELF</a>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #1F2943;">
+        <a class="navbar-brand" href="login-homepage.html"><img src="images/website-logo.png" height="45"></a>        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,7 +35,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="login-aboutus.html">About Us</a>
-            </li>
+            </li>           
+          </ul>
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="homepage.html">Logout</a>
             </li>
@@ -44,49 +47,26 @@
     </header>
 
     <main role="main">
-
+        
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="first-slide" src="images/cytonn-photography-ZJEKICY5EXY-unsplash.jpg" alt="First slide">
             <div class="container">
               <div class="carousel-caption">
-                <h1>Your Answers</h1>
-                <p>Build your professional profile by creating your best answer to questions related to your education, work experience, your skillset and qualities</p>
+                <h1 style="color: #1F2943; font-weight: bold;">Your Answers</h1>
+                <p style="color: #1F2943;">Build your professional profile by creating your best answer to questions related to your education, work experience, your skillset and qualities</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-        
         <br>
 
         <div class="main-container">
-
-          <div>
-            <h2>SYNONYM BANK</h2>
-            <div class="vertical-menu">
-                
-                <a class="active">For Leading a Project</a>
-                <a>Chaired</a>
-                <a>Controlled</a>
-                <a>Coordinated</a>
-                <a>Executed</a>
-                <a>Headed</a>
-                <a>Operated</a>
-                <a>Orchestrated</a>
-                <a>Organised</a>
-                <a>Oversaw</a>
-                <a>Planned</a>
-                <a>Produced</a>
-                <a>Programmed</a>
-            </div>
-          </div>
-
-          <div style="padding-left: 10rem; padding-right: 10rem;">
+          
+          <div style="padding-left: 5em; padding-right: 5rem;">
             <div class="section-bar" style="text-align: center; font-size: large;">
               <a href="#personal" style="color:black">Personal</a>
                |
@@ -94,10 +74,10 @@
                |
               <a href="#competency" style="color:black">Competency</a>
             </div>
-
+            <!--
             <hr id="personal">
 
-            <div>
+            <div style="max-width: 30rem;">
               <h2 style="text-align: center;">Personal</h2>
               <form>
                 <div class="form-group">
@@ -149,7 +129,7 @@
             
             <hr id="experience">
 
-            <div>
+            <div style="max-width: 30rem;">
               <h2 style="text-align: center;">Experience</h2>
               <form>
                 <div class="form-group">
@@ -178,77 +158,223 @@
                 </div>
               </form>
             </div>
-
+            -->
             <hr id="competency">
 
-            <div>
+            <div style="max-width: 65rem;">
               <h2 style="text-align: center;">Competency</h2>
-              <form>
-                <div class="form-group">
-                  <label for="role-contribution">What do you believe the role and contribution of “Job Title” to be in a company like "Company Name"?</label>
+
+              <div id="accordion">
+
+                <!-- 1 (RIGHT LABELS) -->
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What do you believe the role and contribution of “Job Title” to be in a company like "Company Name"?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
                   <textarea class="form-control" id="role-contribution" rows="5" style="resize: none;"></textarea>
                 </div>
-      
-                <div class="form-group">
-                  <label for="reasons-working">Why do you want to work for "Company Name"?</label>
-                  <textarea class="form-control" id="reasons-working" rows="5" style="resize: none;"></textarea>
+
+                <!-- 2 (RIGHT LABELS) -->
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Why do you want to work for "Company Name"?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                  <textarea class="form-control" id="reasons" rows="5" style="resize: none;"></textarea>
                 </div>
-      
-                <div class="form-group">
-                  <label for="qualities-skills">Please detail the qualities and skills you possess that would contribute towards you being successful in the role and your chosen area</label>
+
+                <!-- 3 (RIGHT LABELS) -->
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Please detail the qualities and skills you possess that would contribute towards you being successful in the role and your chosen area.
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
                   <textarea class="form-control" id="qualities-skills" rows="5" style="resize: none;"></textarea>
                 </div>
-      
-                <div class="form-group">
-                  <label for="academic-experience">How do you think you will utilize your academic skills and experience to add value to the division you are applying to?</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" style="resize: none;"></textarea>
+                
+                <!-- 4 (RIGHT LABELS) -->
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        How do you think you will utilize your academic skills and experience to add value to the division you are applying to?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                  <textarea class="form-control" id="academics-experience" rows="5" style="resize: none;"></textarea>
                 </div>
-      
-                <div class="form-group">
-                  <label for="hobbies-interests">What are your hobbies and interests?</label>
+
+                <!-- 5 (RIGHT LABELS) -->
+                <div class="card">
+                  <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        What are your hobbies and interests?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
                   <textarea class="form-control" id="hobbies-interests" rows="5" style="resize: none;"></textarea>
                 </div>
-      
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Give an example of when you have worked under pressure.</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" style="resize: none;"></textarea>
+
+                <!-- 6 (RIGHT LABELS) -->
+                <div class="card">
+                  <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Give an example of when you have worked under pressure.
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div class="card-body">
+                      You need to prove that you've handled deadlines successfully in the past. Describe how you overcame obstacles that you had no control over.
+                    </div>
+                  </div>
+                  <textarea class="form-control" id="pressure" rows="5" style="resize: none;"></textarea>
                 </div>
 
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">What is your greatest achievement?</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" style="resize: none;"></textarea>
+                <!-- 7 (RIGHT LABELS) -->
+                <div class="card">
+                  <div class="card-header" id="headingSeven">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        What is your greatest achievement?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                    <div class="card-body">
+                      Choose something outside of your academic life that's uniquely significant to you. This is an assessment of your attitude and motivations, to find out whether your values are compatible with those of the organisation.
+                    </div>
+                  </div>
+                  <textarea class="form-control" id="achievement" rows="5" style="resize: none;"></textarea>
                 </div>
 
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Give an example of how you made a positive contribution to a team and what the outcome was.</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" style="resize: none;"></textarea>
+                <!-- 8 (RIGHT LABELS) -->
+                <div class="card">
+                  <div class="card-header" id="headingEight">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        Give an example of how you made a positive contribution to a team and what the outcome was.
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                    <div class="card-body">
+                      The employer is checking that you have experience of working in a cohesive team environment. Describe a scenario where you had to draw on strengths and qualities in order to accomplish a group task. Explain your particular role, how weaknesses were overcome and what you learned.
+                    </div>
+                  </div>
+                  <textarea class="form-control" id="positive-contribution" rows="5" style="resize: none;"></textarea>
                 </div>
 
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Describe an occasion when you've had to communicate complex information.</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" style="resize: none;"></textarea>
+                <!-- 9 (RIGHT LABELS) -->
+                <div class="card">
+                  <div class="card-header" id="headingNine">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        Describe an occasion when you've had to communicate complex information.
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                    <div class="card-body">
+                      This is a test of your ability to analyse complicated information effectively, and communicate it in a way that the audience can understand. Set the scene and describe your thinking process in a step-by-step way.
+                    </div>
+                  </div>
+                  <textarea class="form-control" id="communication" rows="5" style="resize: none;"></textarea>
                 </div>
 
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">What is the biggest challenge that you've faced and how did you handle it?</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" style="resize: none;"></textarea>
+                <!-- 10 (RIGHT LABELS) -->
+                <div class="card">
+                  <div class="card-header" id="headingTen">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        What is the biggest challenge that you've faced and how did you handle it?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                    <div class="card-body">
+                      The employer will be looking to find out about your attitude to challenges, as well as your ability to problem-solve and overcome obstacles, so you need to provide a significant example that demonstrates your adaptability in this area.
+                    </div>
+                  </div>
+                  <textarea class="form-control" id="challenge" rows="5" style="resize: none;"></textarea>
                 </div>
 
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">What are your greatest strengths and weaknesses?</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" style="resize: none;"></textarea>
+                <!-- 11 (RIGHT LABELS) -->
+                <div class="card">
+                  <div class="card-header" id="headingEleven">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                        What are your greatest strengths and weaknesses?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordion">
+                    <div class="card-body">
+                      Describing your strengths may come more naturally, but when it comes to your weaknesses, it is important to be honest and reveal things you are genuinely looking to improve on. Your answers need to be well-considered and tailored towards the role you are applying for. Show them that you are actively looking to learn and grow.
+                    </div>
+                  </div>
+                  <textarea class="form-control" id="strength-weakness" rows="5" style="resize: none;"></textarea>
                 </div>
 
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Discuss a time when you failed to complete a project by the deadline.</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" style="resize: none;"></textarea>
+                <!-- 12 (RIGHT LABELS) -->
+                <div class="card">
+                  <div class="card-header" id="headingTwelve">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                        Discuss a time when you failed to complete a project by the deadline.
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion">
+                    <div class="card-body">
+                      Your response should adequately justify the reasons for missing the deadline. While there are various ways to approach this, you'll need to give a good explanation and demonstrate that you've learned from this setback. The employer is looking to determine whether you'll manage your time effectively in the future.
+                    </div>
+                  </div>
                 </div>
-              </form>
+                <textarea class="form-control" id="deadline" rows="5" style="resize: none;"></textarea>
+              </div>              
             </div>
           </div>
 
           <div>
-                <h2>POWER BANK</h2>
+                <h2>Word Bank</h2>
                 <div class="vertical-menu">
                     
                     <a class="active">For Leading a Project</a>
