@@ -8,7 +8,10 @@ body {
     color: #5a5a5a;
     font-family: 'Public Sans', sans-serif;
   }
-  
+
+  h2 {
+    font-family: 'Public Sans', sans-serif;
+  }
   
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
