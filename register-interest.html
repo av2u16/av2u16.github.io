@@ -21,7 +21,7 @@
 
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #1F2943;">
-          <a class="navbar-brand" href="homepage.html"><img src="images/website-logo.png" height="45"></a>
+          <a class="navbar-brand" href="homepage-register.html"><img src="images/website-logo.png" height="45"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -56,14 +56,73 @@
 
         <div class="checkbox mb-3">
           <label>
-            <input type="checkbox" value="remember-me"> Confirm that you agree with our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
+            <input type="checkbox" value="remember-me" required data-validation-required-message="You must agree to the Terms and Conditions and Privacy Policy"> Confirm that you agree with our <a href="#" data-toggle="modal" data-target="#tcPolicy">Terms and Conditions</a> and <a href="#" data-toggle="modal" data-target="#privacyPolicy">Privacy Policy</a>
+
+            <!-- T&C Policy - Modal -->
+            <div class="modal fade" id="tcPolicy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Our Terms and Conditions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body text-left">
+                    <p>Your privacy is important to us. It is Apply Myself's policy to respect your privacy regarding any information we may collect from you across our website, https://www.applymyself.co.uk/, and other sites we own and operate.</p>
+                    <br>
+                    <p>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.</p>
+                    <br>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Privacy Policy - Modal -->
+            <div class="modal fade" id="privacyPolicy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Privacy Policy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body text-left">
+                    <p>Your privacy is important to us. It is Apply Myself's policy to respect your privacy regarding any information we may collect from you across our website, https://www.applymyself.co.uk/, and other sites we own and operate.</p>
+                    <br>
+                    <p>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.</p>
+                    <br>
+                    <p>We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we’ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification.</p>
+                    <br>
+                    <p>We don’t share any personally identifying information publicly or with third-parties, except when required to by law.</p>
+                    <br>
+                    <p>Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies.</p>
+                    <br>
+                    <p>You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.</p>
+                    <br>
+                    <p>Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.</p>
+                    <br>
+                    <p>This policy is effective as of 10 September 2020.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </label>
         </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+
+        <p><a class="btn btn-lg btn-primary" href="register-thankyou.html" role="button">Submit</a></p>
     </form>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/vendor/popper.min.js"></script>
