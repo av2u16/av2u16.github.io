@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="icon" href="images/main-icon.png">
 
     <title>Register - Apply Myself</title>
 
@@ -45,9 +45,11 @@
       </nav>
     </header>
 
-    <form class="form-signin text-center">
+    <form class="form-signin text-center"> 
+        <br>
+        <h1 class="h3 mb-3 font-weight-bold";">Register</h1>
+        <p>Create an account to write 'Your Answers' and access 'Job Tracker' in <strong>Apply Myself</strong></p>
         <hr>
-        <h1 class="h3 mb-3 font-weight-normal";">Register</h1>
         <label for="inputEmail" class="sr-only">full name</label>
         <input type="text" id="inputEmail" class="form-control" placeholder="Full Name" required autofocus>
         <label for="inputEmail" class="sr-only">email address</label>
@@ -56,11 +58,45 @@
         <input type="password" id="createPassword" class="form-control" placeholder="Create Password" required>
         <label for="confirmPassword" class="sr-only">password</label>
         <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm Password" required>
-        <br>
 
         <div class="checkbox mb-3">
           <label>
-            <input type="checkbox" value="remember-me"> Confirm that you agree with our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
+            <input type="checkbox" value="remember-me"> Confirm that you agree with our <a href="#">Terms and Conditions</a> and <a href="#" data-toggle="modal" data-target="#exampleModalCenter">Privacy Policy</a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Privacy Policy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body text-left">
+                    <p>Your privacy is important to us. It is MassApply's policy to respect your privacy regarding any information we may collect from you across our website, https://www.applymyself.co.uk/, and other sites we own and operate.</p>
+                    <br>
+                    <p>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.</p>
+                    <br>
+                    <p>We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we’ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification.</p>
+                    <br>
+                    <p>We don’t share any personally identifying information publicly or with third-parties, except when required to by law.</p>
+                    <br>
+                    <p>Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies.</p>
+                    <br>
+                    <p>You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.</p>
+                    <br>
+                    <p>Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.</p>
+                    <br>
+                    <p>This policy is effective as of 10 September 2020.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </label>
         </div>
 
