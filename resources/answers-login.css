@@ -93,6 +93,12 @@ body {
     }
   }
 
+  .btn-primary {
+    border: #117683; 
+    background-color: #117683; 
+    font-weight: bold;
+  }
+
   .main-container {
     display: grid;
     max-width: 62em;
@@ -119,7 +125,7 @@ body {
   }
 
   .vertical-menu a.active {
-    background-color: rgb(19, 165, 165);
+    background-color: #117683;
     color: white;
   }
 

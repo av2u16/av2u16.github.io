@@ -66,10 +66,10 @@
 
         <div class="main-container">
           
-          <div style="padding-left: 5em; padding-right: 5rem;">
+          <div style="padding-left: 12em; padding-right: 5rem;">
             <div class="section-bar" style="text-align: center; font-size: large;">
-              <a href="#personal" style="color:black">Personal</a>
-               |
+              <!--a href="#personal" style="color:black">Personal</a>
+               |-->
               <a href="#experience" style="color:black">Experience</a>
                |
               <a href="#competency" style="color:black">Competency</a>
@@ -125,11 +125,11 @@
                   <textarea class="form-control" id="country" rows="1" style="resize: none;"></textarea>
                 </div>
               </form>
-            </div>
+            </div-->
             
-            <hr id="experience">
+            <!--hr id="experience">
 
-            <div style="max-width: 30rem;">
+            <div>
               <h2 style="text-align: center;">Experience</h2>
               <form>
                 <div class="form-group">
@@ -157,17 +157,17 @@
                   <textarea class="form-control" id="role-contribution" rows="5" style="resize: none;"></textarea>
                 </div>
               </form>
-            </div>
-            -->
+            </div-->
+            
             <hr id="competency">
 
-            <div style="max-width: 65rem;">
+            <div>
               <h2 style="text-align: center;">Competency</h2>
 
               <div id="accordion">
 
                 <!-- 1 (RIGHT LABELS) -->
-                <div class="card">
+                <!--div class="card">
                   <div class="card-header" id="headingOne">
                     <h5 class="mb-0">
                       <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -181,15 +181,19 @@
                     </div>
                   </div>
                   <textarea class="form-control" id="role-contribution" rows="5" style="resize: none;"></textarea>
-                </div>
+                </div-->
 
                 <!-- 2 (RIGHT LABELS) -->
                 <div class="card">
                   <div class="card-header" id="headingTwo">
                     <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                         Why do you want to work for "Company Name"?
+                        
                       </button>
+                      <i class="fa fa-smile-o w3-hover-opacity" onclick="happy2()"></i>
+                      <i class="fa fa-meh-o w3-hover-opacity" onclick="incomplete2()"></i>
+                      <i class="fa fa-refresh w3-hover-opacity" onclick="reset2()"></i>
                     </h5>
                   </div>
                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
@@ -206,8 +210,11 @@
                   <div class="card-header" id="headingThree">
                     <h5 class="mb-0">
                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Please detail the qualities and skills you possess that would contribute towards you being successful in the role and your chosen area.
+                        Please detail the qualities and skills you can bring to this position.                      
                       </button>
+                      <i class="fa fa-smile-o w3-hover-opacity" onclick="happy3()"></i>
+                      <i class="fa fa-meh-o w3-hover-opacity" onclick="incomplete3()"></i>
+                      <i class="fa fa-refresh w3-hover-opacity" onclick="reset3()"></i>
                     </h5>
                   </div>
                   <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
@@ -219,7 +226,7 @@
                 </div>
                 
                 <!-- 4 (RIGHT LABELS) -->
-                <div class="card">
+                <!--div class="card">
                   <div class="card-header" id="headingFour">
                     <h5 class="mb-0">
                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -233,7 +240,7 @@
                     </div>
                   </div>
                   <textarea class="form-control" id="academics-experience" rows="5" style="resize: none;"></textarea>
-                </div>
+                </div-->
 
                 <!-- 5 (RIGHT LABELS) -->
                 <div class="card">
@@ -242,6 +249,9 @@
                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                         What are your hobbies and interests?
                       </button>
+                      <i class="fa fa-smile-o w3-hover-opacity" onclick="happy5()"></i>
+                      <i class="fa fa-meh-o w3-hover-opacity" onclick="incomplete5()"></i>
+                      <i class="fa fa-refresh w3-hover-opacity" onclick="reset5()"></i>                      
                     </h5>
                   </div>
                   <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
@@ -257,8 +267,11 @@
                   <div class="card-header" id="headingSix">
                     <h5 class="mb-0">
                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        Give an example of when you have worked under pressure.
+                        Give an example of when you have worked under pressure.                        
                       </button>
+                      <i class="fa fa-smile-o w3-hover-opacity" onclick="happy6()"></i>
+                      <i class="fa fa-meh-o w3-hover-opacity" onclick="incomplete6()"></i>
+                      <i class="fa fa-refresh w3-hover-opacity" onclick="reset6()"></i>                      
                     </h5>
                   </div>
                   <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
@@ -276,6 +289,9 @@
                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                         What is your greatest achievement?
                       </button>
+                      <i class="fa fa-smile-o w3-hover-opacity" onclick="happy7()"></i>
+                      <i class="fa fa-meh-o w3-hover-opacity" onclick="incomplete7()"></i>
+                      <i class="fa fa-refresh w3-hover-opacity" onclick="reset7()"></i>                      
                     </h5>
                   </div>
                   <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
@@ -293,6 +309,9 @@
                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                         Give an example of how you made a positive contribution to a team and what the outcome was.
                       </button>
+                      <i class="fa fa-smile-o w3-hover-opacity" onclick="happy8()"></i>
+                      <i class="fa fa-meh-o w3-hover-opacity" onclick="incomplete8()"></i>
+                      <i class="fa fa-refresh w3-hover-opacity" onclick="reset8()"></i>                      
                     </h5>
                   </div>
                   <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
@@ -310,6 +329,9 @@
                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
                         Describe an occasion when you've had to communicate complex information.
                       </button>
+                      <i class="fa fa-smile-o w3-hover-opacity" onclick="happy9()"></i>
+                      <i class="fa fa-meh-o w3-hover-opacity" onclick="incomplete9()"></i>
+                      <i class="fa fa-refresh w3-hover-opacity" onclick="reset9()"></i>
                     </h5>
                   </div>
                   <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
@@ -327,6 +349,9 @@
                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
                         What is the biggest challenge that you've faced and how did you handle it?
                       </button>
+                      <i class="fa fa-smile-o w3-hover-opacity" onclick="happy10()"></i>
+                      <i class="fa fa-meh-o w3-hover-opacity" onclick="incomplete10()"></i>
+                      <i class="fa fa-refresh w3-hover-opacity" onclick="reset10()"></i>                      
                     </h5>
                   </div>
                   <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
@@ -342,8 +367,11 @@
                   <div class="card-header" id="headingEleven">
                     <h5 class="mb-0">
                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                        What are your greatest strengths and weaknesses?
+                        What are your greatest strengths and weaknesses?                        
                       </button>
+                      <i class="fa fa-smile-o w3-hover-opacity" onclick="happy11()"></i>
+                      <i class="fa fa-meh-o w3-hover-opacity" onclick="incomplete11()"></i>
+                      <i class="fa fa-refresh w3-hover-opacity" onclick="reset11()"></i>                      
                     </h5>
                   </div>
                   <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordion">
@@ -361,6 +389,9 @@
                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
                         Discuss a time when you failed to complete a project by the deadline.
                       </button>
+                      <i class="fa fa-smile-o w3-hover-opacity" onclick="happy12()"></i>
+                      <i class="fa fa-meh-o w3-hover-opacity" onclick="incomplete12()"></i>
+                      <i class="fa fa-refresh w3-hover-opacity" onclick="reset12()"></i>
                     </h5>
                   </div>
                   <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion">
@@ -372,220 +403,248 @@
                 <textarea class="form-control" id="deadline" rows="5" style="resize: none;"></textarea>
               </div>              
             </div>
+            <br>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#exampleModal">
+              Save
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Saved Answers</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Your answers have been saved successfully!
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div>
-                <h2>Word Bank</h2>
-                <div class="vertical-menu">
-                    
-                    <a class="active">For Leading a Project</a>
-                    <a>Chaired</a>
-                    <a>Controlled</a>
-                    <a>Coordinated</a>
-                    <a>Executed</a>
-                    <a>Headed</a>
-                    <a>Operated</a>
-                    <a>Orchestrated</a>
-                    <a>Organised</a>
-                    <a>Oversaw</a>
-                    <a>Planned</a>
-                    <a>Produced</a>
-                    <a>Programmed</a>
+            <p></p>
+            
+            <h2>Word Bank</h2>
+            <div class="vertical-menu">
+                
+                <a class="active">For Leading a Project</a>
+                <a>Chaired</a>
+                <a>Controlled</a>
+                <a>Coordinated</a>
+                <a>Executed</a>
+                <a>Headed</a>
+                <a>Operated</a>
+                <a>Orchestrated</a>
+                <a>Organised</a>
+                <a>Oversaw</a>
+                <a>Planned</a>
+                <a>Produced</a>
+                <a>Programmed</a>
 
-                    <a class="active">Envisioning a Project</a>
-                    <a>Administered</a>
-                    <a>Built</a>
-                    <a>Charted</a>
-                    <a>Created</a>
-                    <a>Designed</a>
-                    <a>Developed</a>
-                    <a>Devised</a>
-                    <a>Founded</a>
-                    <a>Engineered</a>
-                    <a>Established</a>
-                    <a>Formalized</a>
-                    <a>Formed</a>
-                    <a>Formulated</a>
-                    <a>Implemented</a>
-                    <a>Incorporated</a>
-                    <a>Initiated</a>
-                    <a>Instituted</a>
-                    <a>Introduced</a>
-                    <a>Launched</a>
-                    <a>Pioneered</a>
-                    <a>Spearheaded</a>
+                <a class="active">Envisioning a Project</a>
+                <a>Administered</a>
+                <a>Built</a>
+                <a>Charted</a>
+                <a>Created</a>
+                <a>Designed</a>
+                <a>Developed</a>
+                <a>Devised</a>
+                <a>Founded</a>
+                <a>Engineered</a>
+                <a>Established</a>
+                <a>Formalized</a>
+                <a>Formed</a>
+                <a>Formulated</a>
+                <a>Implemented</a>
+                <a>Incorporated</a>
+                <a>Initiated</a>
+                <a>Instituted</a>
+                <a>Introduced</a>
+                <a>Launched</a>
+                <a>Pioneered</a>
+                <a>Spearheaded</a>
 
-                    <a class="active">Saved Company Time and Money</a>
-                    <a>Conserved</a>
-                    <a>Consolidated</a>
-                    <a>Decreased</a>
-                    <a>Deducted</a>
-                    <a>Diagnosed</a>
-                    <a>Lessened</a>
-                    <a>Reconciled</a>
-                    <a>Reduced</a>
-                    <a>Yielded</a>
+                <a class="active">Saved Company Time and Money</a>
+                <a>Conserved</a>
+                <a>Consolidated</a>
+                <a>Decreased</a>
+                <a>Deducted</a>
+                <a>Diagnosed</a>
+                <a>Lessened</a>
+                <a>Reconciled</a>
+                <a>Reduced</a>
+                <a>Yielded</a>
 
-                    <a class="active">Improved Company's Numbers</a>
-                    <a>Accelerated</a>
-                    <a>Achieved</a>
-                    <a>Advanced</a>
-                    <a>Amplified</a>
-                    <a>Boosted</a>
-                    <a>Capitalized</a>
-                    <a>Delivered</a>
-                    <a>Enhanced</a>
-                    <a>Expanded</a>
-                    <a>Expedited</a>
-                    <a>Furthered</a>
-                    <a>Gained</a>
-                    <a>Generated</a>
-                    <a>Improved</a>
-                    <a>Lifted</a>
-                    <a>Maximized</a>
-                    <a>Outpaced</a>
-                    <a>Stimulated</a>
-                    <a>Sustained</a>
+                <a class="active">Improved Company's Numbers</a>
+                <a>Accelerated</a>
+                <a>Achieved</a>
+                <a>Advanced</a>
+                <a>Amplified</a>
+                <a>Boosted</a>
+                <a>Capitalized</a>
+                <a>Delivered</a>
+                <a>Enhanced</a>
+                <a>Expanded</a>
+                <a>Expedited</a>
+                <a>Furthered</a>
+                <a>Gained</a>
+                <a>Generated</a>
+                <a>Improved</a>
+                <a>Lifted</a>
+                <a>Maximized</a>
+                <a>Outpaced</a>
+                <a>Stimulated</a>
+                <a>Sustained</a>
 
-                    <a class="active">Changed or Improved Something</a>
-                    <a>Centralized</a>
-                    <a>Clarified</a>
-                    <a>Converted</a>
-                    <a>Customized</a>
-                    <a>Influenced</a>
-                    <a>Integrated</a>
-                    <a>Merged</a>
-                    <a>Modified</a>
-                    <a>Overhauled</a>
-                    <a>Redesigned</a>
-                    <a>Refined</a>
-                    <a>Refocused</a>
-                    <a>Rehabilitated</a>
-                    <a>Remodeled</a>
-                    <a>Reorganized</a>
-                    <a>Replaced</a>
-                    <a>Restructured</a>
-                    <a>Revamped</a>
-                    <a>Revitalized</a>
-                    <a>Simplified</a>
-                    <a>Standardized</a>
-                    <a>Streamlined</a>
-                    <a>Strengthened</a>
-                    <a>Updated</a>
-                    <a>Upgraded</a>
-                    <a>Transformed</a>
+                <a class="active">Changed or Improved Something</a>
+                <a>Centralized</a>
+                <a>Clarified</a>
+                <a>Converted</a>
+                <a>Customized</a>
+                <a>Influenced</a>
+                <a>Integrated</a>
+                <a>Merged</a>
+                <a>Modified</a>
+                <a>Overhauled</a>
+                <a>Redesigned</a>
+                <a>Refined</a>
+                <a>Refocused</a>
+                <a>Rehabilitated</a>
+                <a>Remodeled</a>
+                <a>Reorganized</a>
+                <a>Replaced</a>
+                <a>Restructured</a>
+                <a>Revamped</a>
+                <a>Revitalized</a>
+                <a>Simplified</a>
+                <a>Standardized</a>
+                <a>Streamlined</a>
+                <a>Strengthened</a>
+                <a>Updated</a>
+                <a>Upgraded</a>
+                <a>Transformed</a>
 
-                    <a class="active">Managed a Team</a>
-                    <a>Aligned</a>
-                    <a>Cultivated</a>
-                    <a>Directed</a>
-                    <a>Enabled</a>
-                    <a>Facilitated</a>
-                    <a>Fostered</a>
-                    <a>Guided</a>
-                    <a>Hired</a>
-                    <a>Inspired</a>
-                    <a>Mentored</a>
-                    <a>Mobilized</a>
-                    <a>Recruited</a>
-                    <a>Regulated</a>
-                    <a>Shaped</a>
-                    <a>Supervised</a>
-                    <a>Taught</a>
-                    <a>Trained</a>
-                    <a>Unified</a>
-                    <a>United</a>
+                <a class="active">Managed a Team</a>
+                <a>Aligned</a>
+                <a>Cultivated</a>
+                <a>Directed</a>
+                <a>Enabled</a>
+                <a>Facilitated</a>
+                <a>Fostered</a>
+                <a>Guided</a>
+                <a>Hired</a>
+                <a>Inspired</a>
+                <a>Mentored</a>
+                <a>Mobilized</a>
+                <a>Recruited</a>
+                <a>Regulated</a>
+                <a>Shaped</a>
+                <a>Supervised</a>
+                <a>Taught</a>
+                <a>Trained</a>
+                <a>Unified</a>
+                <a>United</a>
 
-                    <a class="active">Brought Partners, Funding or Resources</a>
-                    <a>Acquired</a>
-                    <a>Forged</a>
-                    <a>Navigated</a>
-                    <a>Negotiated</a>
-                    <a>Partnered</a>
-                    <a>Secured</a>
+                <a class="active">Brought Partners, Funding or Resources</a>
+                <a>Acquired</a>
+                <a>Forged</a>
+                <a>Navigated</a>
+                <a>Negotiated</a>
+                <a>Partnered</a>
+                <a>Secured</a>
 
-                    <a class="active">Supported Customers</a>
-                    <a>Advised</a>
-                    <a>Advocated</a>
-                    <a>Arbitrated</a>
-                    <a>Coached</a>
-                    <a>Consulted</a>
-                    <a>Educated</a>
-                    <a>Fielded</a>
-                    <a>Informed</a>
-                    <a>Resolved</a>
+                <a class="active">Supported Customers</a>
+                <a>Advised</a>
+                <a>Advocated</a>
+                <a>Arbitrated</a>
+                <a>Coached</a>
+                <a>Consulted</a>
+                <a>Educated</a>
+                <a>Fielded</a>
+                <a>Informed</a>
+                <a>Resolved</a>
 
-                    <a class="active">Research or Analysis</a>
-                    <a>Analyzed</a>
-                    <a>Assembled</a>
-                    <a>Assessed</a>
-                    <a>Audited</a>
-                    <a>Calculated</a>
-                    <a>Discovered</a>
-                    <a>Evaluated</a>
-                    <a>Examined</a>
-                    <a>Explored</a>
-                    <a>Forecasted</a>
-                    <a>Identified</a>
-                    <a>Interpreted</a>
-                    <a>Investigated</a>
-                    <a>Mapped</a>
-                    <a>Measured</a>
-                    <a>Qualified</a>
-                    <a>Quantified</a>
-                    <a>Surveyed</a>
-                    <a>Tested</a>
-                    <a>Tracked</a>
+                <a class="active">Research or Analysis</a>
+                <a>Analyzed</a>
+                <a>Assembled</a>
+                <a>Assessed</a>
+                <a>Audited</a>
+                <a>Calculated</a>
+                <a>Discovered</a>
+                <a>Evaluated</a>
+                <a>Examined</a>
+                <a>Explored</a>
+                <a>Forecasted</a>
+                <a>Identified</a>
+                <a>Interpreted</a>
+                <a>Investigated</a>
+                <a>Mapped</a>
+                <a>Measured</a>
+                <a>Qualified</a>
+                <a>Quantified</a>
+                <a>Surveyed</a>
+                <a>Tested</a>
+                <a>Tracked</a>
 
-                    <a class="active">Communicated</a>
-                    <a>Authored</a>
-                    <a>Briefed</a>
-                    <a>Campaigned</a>
-                    <a>Co-authored</a>
-                    <a>Composed</a>
-                    <a>Conveyed</a>
-                    <a>Convinced</a>
-                    <a>Corresponded</a>
-                    <a>Counseled</a>
-                    <a>Critiqued</a>
-                    <a>Defined</a>
-                    <a>Documented</a>
-                    <a>Edited</a>
-                    <a>Illustrated</a>
-                    <a>Lobbied</a>
-                    <a>Persuaded</a>
-                    <a>Promoted</a>
-                    <a>Publicized</a>
-                    <a>Reviewed</a>
-                    
-                    <a class="active">Oversaw or Regulated</a>
-                    <a>Authorized</a>
-                    <a>Blocked</a>
-                    <a>Delegated</a>
-                    <a>Dispatched</a>
-                    <a>Enforced</a>
-                    <a>Ensured</a>
-                    <a>Inspected</a>
-                    <a>Itemized</a>
-                    <a>Monitored</a>
-                    <a>Screened</a>
-                    <a>Scrutinized</a>
-                    <a>Verified</a>
+                <a class="active">Communicated</a>
+                <a>Authored</a>
+                <a>Briefed</a>
+                <a>Campaigned</a>
+                <a>Co-authored</a>
+                <a>Composed</a>
+                <a>Conveyed</a>
+                <a>Convinced</a>
+                <a>Corresponded</a>
+                <a>Counseled</a>
+                <a>Critiqued</a>
+                <a>Defined</a>
+                <a>Documented</a>
+                <a>Edited</a>
+                <a>Illustrated</a>
+                <a>Lobbied</a>
+                <a>Persuaded</a>
+                <a>Promoted</a>
+                <a>Publicized</a>
+                <a>Reviewed</a>
+                
+                <a class="active">Oversaw or Regulated</a>
+                <a>Authorized</a>
+                <a>Blocked</a>
+                <a>Delegated</a>
+                <a>Dispatched</a>
+                <a>Enforced</a>
+                <a>Ensured</a>
+                <a>Inspected</a>
+                <a>Itemized</a>
+                <a>Monitored</a>
+                <a>Screened</a>
+                <a>Scrutinized</a>
+                <a>Verified</a>
 
-                    <a class="active">Achieved Something</a>
-                    <a>Attained</a>
-                    <a>Awarded</a>
-                    <a>Completed</a>
-                    <a>Demonstrated</a>
-                    <a>Earned</a>
-                    <a>Exceeded</a>
-                    <a>Outperformed</a>        
-                    <a>Reached</a>
-                    <a>Showcased</a>
-                    <a>Succeeded</a>
-                    <a>Surpassed</a>
-                    <a>Targeted</a>
-                </div>
+                <a class="active">Achieved Something</a>
+                <a>Attained</a>
+                <a>Awarded</a>
+                <a>Completed</a>
+                <a>Demonstrated</a>
+                <a>Earned</a>
+                <a>Exceeded</a>
+                <a>Outperformed</a>        
+                <a>Reached</a>
+                <a>Showcased</a>
+                <a>Succeeded</a>
+                <a>Surpassed</a>
+                <a>Targeted</a>
+              </div>
             </div>
 
         </div>
@@ -607,6 +666,103 @@
         <p class="float-right"><a href="#">Back to top</a></p>     
     </footer>
 
+    <script>
+      function happy2() {
+        document.getElementById('headingTwo').style.background = "#00800060";
+      }
+      function happy3() {
+        document.getElementById('headingThree').style.background = "#00800060";
+      }
+      function happy5() {
+        document.getElementById('headingFive').style.background = "#00800060";
+      }
+      function happy6() {
+        document.getElementById('headingSix').style.background = "#00800060";
+      }
+      function happy7() {
+        document.getElementById('headingSeven').style.background = "#00800060";
+      }
+      function happy8() {
+        document.getElementById('headingEight').style.background = "#00800060";
+      }
+      function happy9() {
+        document.getElementById('headingNine').style.background = "#00800060";
+      }
+      function happy10() {
+        document.getElementById('headingTen').style.background = "#00800060";
+      }
+      function happy11() {
+        document.getElementById('headingEleven').style.background = "#00800060";
+      }
+      function happy12() {
+        document.getElementById('headingTwelve').style.background = "#00800060";
+      }
+
+      function incomplete2() {
+        document.getElementById('headingTwo').style.background = "#ffbd59b2";
+      }
+      function incomplete3() {
+        document.getElementById('headingThree').style.background = "#ffbd59b2";
+      }
+      function incomplete5() {
+        document.getElementById('headingFive').style.background = "#ffbd59b2";
+      }
+      function incomplete6() {
+        document.getElementById('headingSix').style.background = "#ffbd59b2";
+      }
+      function incomplete7() {
+        document.getElementById('headingSeven').style.background = "#ffbd59b2";
+      }
+      function incomplete8() {
+        document.getElementById('headingEight').style.background = "#ffbd59b2";
+      }
+      function incomplete9() {
+        document.getElementById('headingNine').style.background = "#ffbd59b2";
+      }
+      function incomplete10() {
+        document.getElementById('headingTen').style.background = "#ffbd59b2";
+      }
+      function incomplete11() {
+        document.getElementById('headingEleven').style.background = "#ffbd59b2";
+      }
+      function incomplete12() {
+        document.getElementById('headingTwelve').style.background = "#ffbd59b2";
+      }
+
+      function reset() {
+        document.getElementById('headingTwo').style.background = "#f0f0f0a0";
+      }
+      function reset2() {
+        document.getElementById('headingTwo').style.background = "#f0f0f0a0";
+      }
+      function reset3() {
+        document.getElementById('headingThree').style.background = "#f0f0f0a0";
+      }
+      function reset5() {
+        document.getElementById('headingFive').style.background = "#f0f0f0a0";
+      }
+      function reset6() {
+        document.getElementById('headingSix').style.background = "#f0f0f0a0";
+      }
+      function reset7() {
+        document.getElementById('headingSeven').style.background = "#f0f0f0a0";
+      }
+      function reset8() {
+        document.getElementById('headingEight').style.background = "#f0f0f0a0";
+      }
+      function reset9() {
+        document.getElementById('headingNine').style.background = "#f0f0f0a0";
+      }
+      function reset10() {
+        document.getElementById('headingTen').style.background = "#f0f0f0a0";
+      }
+      function reset11() {
+        document.getElementById('headingEleven').style.background = "#f0f0f0a0";
+      }
+      function reset12() {
+        document.getElementById('headingTwelve').style.background = "#f0f0f0a0";
+      }
+    </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
